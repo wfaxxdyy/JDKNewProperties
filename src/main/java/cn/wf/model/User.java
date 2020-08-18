@@ -1,14 +1,13 @@
 package cn.wf.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private String name;
     private String age;
-
-    public User(String name, String age) {
-        this.name = name;
-        this.age = age;
-    }
 }

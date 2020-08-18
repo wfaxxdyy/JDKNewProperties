@@ -15,7 +15,7 @@ public class OptionalDemo {
     public void optionalTest1() {
         User user = new User("wf", "18");
         Optional<String> name = Optional.of(user.getName());
-        if(name.isPresent()){
+        if (name.isPresent()) {
             System.out.println(Optional.of(user.getName()).get());
         }
 
@@ -30,10 +30,11 @@ public class OptionalDemo {
         Optional<String> name = Optional.ofNullable(user.getName());
         if (name.isPresent()) {
             System.out.println(Optional.of(user.getName()).get());
-        }else {
+        } else {
             name.orElseThrow(() -> new RuntimeException("出错了。。。"));
         }
     }
+
     /**
      * ofNullable方法(重要)，解决NullPointerException
      */
@@ -60,8 +61,6 @@ public class OptionalDemo {
         User user = new User("wf", "18");
         System.out.println(Optional.ofNullable(user).map(User::getName).filter(u -> u != "wf").orElse("wf1"));
     }
-
-
 
 
 }
