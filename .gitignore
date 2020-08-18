@@ -1,0 +1,17 @@
+.DS_Store
+
+# idea project files
+.idea
+*.iml
+target
+
+# eclipse project files
+.classpath
+.project
+.settings
+deploy.bat
+install.bat
+
+# addition
+lib
+
