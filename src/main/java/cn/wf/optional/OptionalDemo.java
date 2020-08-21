@@ -62,5 +62,4 @@ public class OptionalDemo {
         System.out.println(Optional.ofNullable(user).map(User::getName).filter(u -> u != "wf").orElse("wf1"));
     }
 
-
 }
